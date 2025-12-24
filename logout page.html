@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Logout</title>
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #ff4b5c, #ff9068);
+}
+.box {
+    background: white;
+    width: 350px;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #ff4b5c;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+<h2>You are logged out 👋</h2>
+<button onclick="goBack()">Go to Signup</button>
+</div>
+
+<script>
+localStorage.clear();
+
+function goBack() {
+    window.location.href = "signup.html";
+}
+</script>
+</body>
+</html>
